@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1679011559 source:d:\usuários\izabel\documentos\ufape\2022.1\aed i\laboratórios av2\6-laboratorio-izabel-nascimento\ordenacao.c
+
+1679013339 source:d:\usuários\izabel\documentos\ufape\2022.1\aed i\laboratórios av2\6-laboratorio-izabel-nascimento\ordenacao.h
+
+1679112734 source:d:\usuários\izabel\documentos\ufape\2022.1\aed i\laboratórios av2\6-laboratorio-izabel-nascimento\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ordenacao.c"
+
+1679013339 d:\usuários\izabel\documentos\ufape\2022.1\aed i\laboratórios av2\6-laboratorio-izabel-nascimento\ordenacao.h
+
+1679012904 d:\usuários\izabel\documentos\ufape\2022.1\aed i\laboratórios av2\6-laboratorio-izabel-nascimento\ordenacao.c
+
