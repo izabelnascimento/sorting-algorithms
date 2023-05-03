@@ -71,23 +71,28 @@ void merge(int *vet, int inicio, int meio, int fim)
     i = 0;
     j = 0;
     k = inicio;
-    while (i < a && j < b) {
-        if (left[i] <= right[j]) {
+    while (i < a && j < b)
+    {
+        if (left[i] <= right[j])
+        {
             vet[k] = left[i];
             i++;
         }
-        else {
+        else
+        {
             vet[k] = right[j];
             j++;
         }
         k++;
     }
-    while (i < a) {
+    while (i < a)
+    {
         vet[k] = left[i];
         i++;
         k++;
     }
-    while (j < b) {
+    while (j < b)
+    {
         vet[k] = right[j];
         j++;
         k++;
@@ -105,6 +110,33 @@ void mergeSort(int *vet, int inicio, int fim)
     }
 }
 
-/*void quickSort(int *vet, int n){
+int quick(int *vet, int inicio, int fim)
+{
+    int pivo = vet[fim - 1];
+    int i = inicio - 1;
+    int j, aux;
+    for (j = inicio; j < fim; j++)
+    {
+        if (vet[j] <= pivo)
+        {
+            i++;
+            aux = vet[i];
+            vet[i] = vet[j];
+            vet[j] = aux;
+        }
+    }
+    aux = vet[i + 1];
+    vet[i] = vet[fim - 1];
+    vet[fim - 1] = aux;
+    return i;
+}
 
-}*/
+void quickSort(int *vet, int inicio, int fim)
+{
+    if (inicio < fim)
+    {
+        int novo = quick(vet, inicio, fim);
+        quickSort(vet, inicio, novo);
+        quickSort(vet, novo + 1, fim);
+    }
+}

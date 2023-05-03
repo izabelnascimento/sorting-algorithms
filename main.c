@@ -49,12 +49,12 @@ int main()
     printf("Tempo de execucao: %.2lf milissegundos\n", ((double)time));
     atualizarArquivo(4, numsMerge);
 
-    /*time = clock();
-    quickSort(numsQuick, N);
+    time = clock();
+    quickSort(numsQuick, 0, N);
     time = clock() - time;
     printf("- QUICK SORT -\n");
     printf("Tempo de execucao: %.2lf milissegundos\n", ((double)time));
-    atualizarArquivo(5, numsQuick);;*/
+    atualizarArquivo(5, numsQuick);
 
     return 0;
 }
